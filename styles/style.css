@@ -18,3 +18,14 @@ h1 {
     text-align: center;
     font-size: 150%;
 }
+
+h2 {
+    font-family: pokemon-hollow;
+    text-align: center;
+    font-size: 100%;
+}
+
+div#searchButton{
+    text-align: center;
+}
+
