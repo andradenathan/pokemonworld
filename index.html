@@ -8,17 +8,15 @@
     <title>Hello World!</title>
 </head>
 <body>
-    <h1>Welcome to my Pokémon World!</h1>
+    <h1 id="welcome">Welcome</h1>
     <h2>Search for your favorite Pokémon</h2>
     <div id="searchButton">
-        <form action=""  method="post">
-        <label for="numero">Pokémon name: <input type="text" id="fname" name="numero"></label>
-        <input type="submit" value="Submit">
-      </form></br>
-      <form action=""  method="post">
-        <label for="numero">Pokémon ID: <input type="text" id="fname" name="numero"></label>
-        <input type="submit" value="Submit">
+      <form onsubmit="return false">
+        Pokémon name: <input type="text" name="name" id="pokemon" value="" class="form-control" placeholder="Pokémon name here">
+        <button onclick="returnPokemon(name)">Submit</button>
       </form>
+    
     </div>
+    <p id="poke"></p>
 </body>
 </html>
