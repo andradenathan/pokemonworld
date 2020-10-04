@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 @font-face {
     font-family: pokemon-hollow;
     src: url('../fonts/pokemon-hollow.ttf'), local('../fonts/pokemon-hollow.ttf');
@@ -8,6 +10,9 @@
     src: url('../fonts/pokemon-solid.ttf'), local('../fonts/pokemon-solid.ttf');
 }
 
+*{
+    font-family: Arial;
+}
 
 body {
     background-color: rgb(137, 200, 147);
@@ -25,7 +30,85 @@ h2 {
     font-size: 100%;
 }
 
-div#searchButton{
-    text-align: center;
+.pokeball {
+    width: 10%;
+    height: 30%;
 }
+
+.who_is_this_pokemon {
+    width: 100%;    
+}
+
+
+p {
+    font-family: Arial;
+}
+
+span {
+    display: flex;
+    font-family: Arial;
+}
+
+
+div.searchButton{
+    text-align: center;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 30px;
+}
+
+div.pokemonInformation {
+    margin-top: 30px;
+}
+
+div.pokeAll {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+}
+
+.pokeImage, .pokeName, .pokeNameImage{
+    width: 45%;
+}
+
+.pokeInfos{
+    margin: 30
+}
+
+.status{
+    margin-left: 20px;
+}
+
+input {
+    border-radius: 9px;
+    border: 0.5px solid black;
+    padding-left: 10px;
+    
+}
+
+
+button:hover {
+    background: rgb(137, 200, 147);
+}
+
+button {
+    border-radius: 20px;
+    transition: 1s;
+    border: 0.5px solid black;
+    background-color: green;
+    color: white;
+    padding: 6px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+textarea:focus, input:focus, select:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    border: 1 none;
+    outline: 0;
+} 
 
