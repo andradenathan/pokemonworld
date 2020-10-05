@@ -30,9 +30,16 @@ h2 {
     font-size: 100%;
 }
 
+.pokelogo {
+    display: flex;
+    justify-content: center;
+}
+
 .pokeball {
     width: 10%;
     height: 30%;
+    display: flex;
+
 }
 
 .who_is_this_pokemon {
@@ -46,6 +53,7 @@ p {
 
 span {
     display: flex;
+    justify-content: space-between;
     font-family: Arial;
 }
 

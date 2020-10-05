@@ -10,9 +10,9 @@
 </head>
 <body>
     <h1 id="welcome"></h1>
-    <marquee direction="right" scrollamount="30">
-    <img class="pokeball" src="dayo3ow-7ac86c31-8b2b-4810-89f2-e6134caf1f2d.gif" alt="pokeball" srcset="">
-  </marquee>
+   <div class="pokelogo"> 
+    <img onclick="showMyPokemon()" class="pokeball" src="dayo3ow-7ac86c31-8b2b-4810-89f2-e6134caf1f2d.gif" alt="pokeball" srcset="">
+  </div>
     <div class="searchButton">
       <h2>Search for your favorite Pokémon</h2>
       <form onsubmit="return false">
@@ -22,49 +22,56 @@
       </form>
     </div>
     <div id="info" class="searchButton pokemonInformation">
-      <p>Waiting for Pokemon information...</p>
+      <div id="paragraph">
+      <h2 id="paragraph">Waiting for Pokemon information...</h2>
+    </div>
   <div class="pokeAll" id="pokeAll">
     <div class="pokeNameImage">
     <div class="pokeName" id="pokeName">Name</div>
      <div class="pokeImage" id="pokemonImage">
-      <img class="who_is_this_pokemon" src="who_is_this_pokemon.jpg" alt="pokemon">
+      <img id="who_is_this_pokemon" class="who_is_this_pokemon" src="who_is_this_pokemon.jpg" alt="pokemon">
      </div>
     </div>
      <div class="pokeInfos" id="pokeInfos">
       <span>Type: <div class="pokeType status" id="pokeType">
-      Type
+      None
+       </div></span>
+       <span>Type 2: <div class="pokeType status" id="pokeType2">
+         None
        </div></span>
        <div class="pokeAbilities" id="pokeAbilities">
         <span>Ability 1: <div class="ability1 status" id="ability1">
-         Ability 1
+         None
           </div></span>
           <span>Ability 2: <div class="ability2 status" id="ability2">
-          Ability 2
+          None
           </div></span>
        </div>
        <div class="pokeStatus" id="pokeStatus">
-        <span>Life: <div class="status1 status" id="status1">
-             Life
+        <span>HP: <div class="status1 status" id="status1">
+             0
           </div></span>
           <span>Attack: <div class="status2 status" id="status2">
-            Attack
+            0
           </div></span> 
           <span>Defense: <div class="status3 status" id="status3">
-            Defense   
+            0   
          </div></span>
          <span>Special Attack: <div class="status4 status" id="status4">
-          Special Attack
+          0
          </div></span> 
          <span>Special Defense: <div class="status5 status" id="status5">
-          Special Defense  
+          0  
          </div></span> 
          <span>Speed: <div class="status6 status" id="status6">
-          Speed
+          0
          </div></span>
        </div>
        <span>Weight: <div class="pokeWeight status" id="pokeWeight">
-         1 tonne
+         0
        </div></span>
+      </br>
+       <button onclick="catchPokemon()">Catch Pokemon</button>
      </div>
     </div>
     </div>
